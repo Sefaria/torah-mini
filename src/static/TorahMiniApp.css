@@ -1,3 +1,9 @@
-h1 {
-    color: darkred;
+.full-translation-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.TorahMiniApp {
+    display: flex;
+    flex-direction: column;
 }

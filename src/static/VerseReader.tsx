@@ -18,19 +18,18 @@ const VerseReader: FC<VerseReaderProps> = ({verse, currentWord, setStickyWord, s
         setCurrentWord(index)
     }
 
-    const onMouseOut = () => {
-        returnToStickyWord()
-    }
+    // const onMouseOut = () => {
+    //     returnToStickyWord()
+    // }
 
     const onClick = e => {
-        setStickyWord(e.text)
+        setStickyWord(e.target.value)
     }
 
     return (<div dir="rtl"><div>{verse.words
         .map((word, index) => <span key={word.verse_index+"outer"}>
             <span key={word.verse_index} id={word.verse_index+"-verseWord"} className={"verseWord " + (word.verse_index === currentWord ? "highlight" : "")} onMouseOver={onMouseOver}>{word.word}</span><span key={word.verse_index + "space"}> </span></span>)}
     </div>
-    <div><textarea dir="ltr"></textarea></div>
     </div>)
 }
 
