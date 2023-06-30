@@ -1,0 +1,8 @@
+.verseWord:hover {
+    cursor: pointer;
+}
+
+.highlight {
+    background-color: aqua;
+}
+
