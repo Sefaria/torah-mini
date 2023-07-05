@@ -7,3 +7,24 @@
     display: flex;
     flex-direction: column;
 }
+
+.TorahMiniApp div.flex {
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 1;
+    margin: 4px;
+}
+
+.TorahMiniApp div.flex-row {
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.TorahMiniApp div.flex-column {
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-direction: column;
+}

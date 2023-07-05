@@ -8,14 +8,12 @@ interface DictionaryDisplayProps {
 
 const DictionaryDisplay: FC<DictionaryDisplayProps> = ({verse, currentWord}: DictionaryDisplayProps): ReactElement => {
     return <div>
-        <br/>
-        <br/>
-        <b>Definition:</b>
         <div>
+            <b>Definition:</b><br/>
             {verse.words[currentWord].definition}
         </div>
         <br/>
-    </div>;
+    </div>
 }
 
 export default DictionaryDisplay;

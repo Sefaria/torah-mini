@@ -6,6 +6,7 @@ import VerbChart from "./VerbChart";
 import {Verse} from "./model/Verse";
 import {VerseNotes, WordNote} from "./model/VerseNotes";
 import WordNotes from "./WordNotes";
+import TranslationDisplay from "./TranslationDisplay";
 
 function TorahMiniApp () {
 
@@ -41,8 +42,13 @@ function TorahMiniApp () {
                          setStickyWord={setStickyWord}/>
             {<WordNotes wordNote={currentVerseNotes[currentWord].notes} currentWord={currentWord}
                                       updateWordNote={updateWordNote}  currentVerse={currentVerse}/>}
-            <DictionaryDisplay verse={currentVerse} currentWord={currentWord}/>
-            <VerbChart/>
+            <div className="dict-translation" className="flex">
+                <div className="flex">
+                    <DictionaryDisplay verse={currentVerse} currentWord={currentWord}/>
+                    <VerbChart/>
+                </div>
+                <div className="flex"><TranslationDisplay verse={currentVerse} verseNotes={currentVerseNotes}/></div>
+            </div>
             Translate entire sentence:
             <div className="full-translation-container"><textarea dir="ltr"></textarea></div>
             <br/>

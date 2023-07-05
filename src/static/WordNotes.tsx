@@ -17,7 +17,7 @@ const WordNotes: FC<WordNotesProps> = ({wordNote, currentWord, updateWordNote, c
         updateWordNote(e.target.value, currentWord);
     }
 
-    return <div>Translate {currentVerse.words[currentWord].word}: <input value={wordNote} onChange={handleChange}></input></div>;
+    return <div>Write the definition for: {currentVerse.words[currentWord].word}: <input value={wordNote} onChange={handleChange}></input></div>;
 }
 
 export default WordNotes
