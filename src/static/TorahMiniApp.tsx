@@ -47,7 +47,7 @@ function TorahMiniApp () {
                     <DictionaryDisplay verse={currentVerse} currentWord={currentWord}/>
                     <VerbChart/>
                 </div>
-                <div className="flex"><TranslationDisplay verse={currentVerse} verseNotes={currentVerseNotes}/></div>
+                <div className="flex"><TranslationDisplay setCurrentWord={setCurrentWord} currentWord={currentWord} verse={currentVerse} verseNotes={currentVerseNotes}/></div>
             </div>
             Translate entire sentence:
             <div className="full-translation-container"><textarea dir="ltr"></textarea></div>

@@ -28,3 +28,7 @@
     flex-grow: 1;
     flex-direction: column;
 }
+
+.verseWord:hover {
+    cursor: pointer;
+}
