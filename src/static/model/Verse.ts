@@ -1,44 +1,882 @@
 const dict = {
-    "שֹׁפֵךְ֙": `שָׁפַךְ113  vb. pour out, pour (NH id.; Assyrian šapâku, pour out, especially (DlWB JenKosmol. 41) earth, to form mound; Arabic سَفَكَ pour out, cf. سَبَكَ melt and pour into mould; Ethiopic ሰበከ: Aramaic שְׁפַךְ, ܫܦܰܟ (rare) = BH);—
-Qal  Pf. 3 ms. שׁ׳ 1 K 2:31 +; 3 fs. sf. שְׁפָכַ֫תְהוּ Ez 24:7, etc.; Impf. 3 ms. יִשְׁפֹּךְ 2 K 19:32 +; 2 ms. sf. 3 ms. תִּשְׁפְּכֶנּוּ Dt 12:16 +, etc.; Imv. ms. שְׁפוֹךְ Ju 6:20 +, שְׁפָךְ־ ψ 69:25; fs. שִׁפְכִי La 2:19, etc.; Inf. cstr. שְׁפָךְ־ 1 K 18:28 +, לִשְׁפֹּךְ Is 59:7 +, etc.; Pt. act. שֹׁפֵךְ Gn 9:6 +, f. שֹׁפֶ֫כֶת Ez 22:3, etc.; pass. שָׁפוּךְ ψ 79:10, שְׁפוּכָה Ez 20:33, 34;— 1.  lit.: a.  pour out, pour water Ex 4:9 (J; acc. loc.), 1 S 7:6 (+ לִפְנֵי י׳, unique, symb. of contrition), עַל־פְּנֵי הָאָרֶץ (subj. י׳) Am 5:8; 9:6; blood like water (to flow away and be absorbed), עַל־הָאָרֶץ Dt 12:16, 24; 15:23, cf. Lv 17:13 (H) Ez 24:7; also + אֶל loc. Ex 29:12; Lv`,
-    "דַּ֣ם": `† דָּם360  n.m. Gn 9:6 blood (NH id. Arabic دَمٌ, Ethiopic ደም: Assyrian damu Nor 239 ZimBP 72, 76; Aramaic דַּם, דְּמָא, ܕܶܡ, ܕܡܳܐ )—
-1.  blood of man or animal, = the life (נֶפֶשׁ) Gn 9:4 (P) Dt 12:23; Lv 17:14(×2) (H); cf. נֶפֶשׁ הַבָּשָׂר בַּדָּם הִוא v 11 (H & דִּמְכֶם לְנַפְשֹׁתֵיכֶם Gn 9:5 (P); see also ψ 72:14 וְיֵיקַר דָּמָם בְּעֵינָיו; hence blood of animals not to be eaten Lv 3:17; 7:26, 27 (all P) 17:10(×2), 12(×2), 14; 19:26 (all H) Dt 12:16, 23; 15:23; 1 S 14:32, 33, 34; Ez 33:25 (cf. RSK 310), but to be poured out & covered with dust Lv 17:13 (cf. RSSem i. 216 f.).
-`,
-    "הָֽאָדָ֔ם": `אָדָם
-     n.m. Gn 1:27 man, mankind (Ph. אדם, Sab. id., CISiv. 1, 1. 4 al.; cf. As. admu, young (of bird) DlW, but NöZMG 1886, 722 identif. with Ar. أَذَامٌ coll. creatures)—Sg. abs. exc. cstr. Pr 6:12 cf. Thes; (בְּנֵי (הָ)א׳ oft. = pl. of א׳ Gn 11:5 + 39 textual, cf. בְּנוֹת הָא׳ Gn 6:2, 4)—
-  1.   a man (= Ger. Mensch) = human being Gn 2:5, 7(×2), 8, 15, 16, 18 +, 16:12 (27 textual J) Lv 5:4 (‖ נֶפֶשׁ) 13:2, 9 (19 textual P) Ne 2:10 Is 13:12 (‖ אֱנוֹשׁ); הָאָ׳ הַגָּדוֹל Jos 14:15 (E); אָ׳ בְּלִיַּעַל Pr 6:12 (‖ אִישׁ אָוֶן cf. 1 S 25:25 & v. בליעל); = any one Lv 1:2 Nu 9:6, 7 Jb 20:29; 27:13 Pr 15:20; 21:16, 20; 24:30 Ec 7:20 + oft. WisdLt, Je 2:6; 4:25 Ne 2:12, cf. נֶפֶשׁ א׳ Nu 19:11, 13 +; seld. man opp. woman Gn 2:22(×2), 23, 25; 3:8, 12, 17, 20, 21 Ec 7:28.`,
-    "בָּֽאָדָ֖ם":`בְּ◌ prep. 
-I  prefix (b. h.) in, within, on &c. בו ביום on that day; באותו מקום in that very place; מיניה וביה from it and in it, i.e. out of the very thing. B. Mets. 101ᵇ אגרא … מיניה וביה she hired carriers, paying them from the very wine which the man had placed in her storeroom.—בֹּון = בְּהוֹן. Y. Ber. II, 4ᶜ bot.; a. fr.
-אָדָם
-     n.m. Gn 1:27 man, mankind (Ph. אדם, Sab. id., CISiv. 1, 1. 4 al.; cf. As. admu, young (of bird) DlW, but NöZMG 1886, 722 identif. with Ar. أَذَامٌ coll. creatures)—Sg. abs. exc. cstr. Pr 6:12 cf. Thes; (בְּנֵי (הָ)א׳ oft. = pl. of א׳ Gn 11:5 + 39 textual, cf. בְּנוֹת הָא׳ Gn 6:2, 4)—
-  1.   a man (= Ger. Mensch) = human being Gn 2:5, 7(×2), 8, 15, 16, 18 +, 16:12 (27 textual J) Lv 5:4 (‖ נֶפֶשׁ) 13:2, 9 (19 textual P) Ne 2:10 Is 13:12 (‖ אֱנוֹשׁ); הָאָ׳ הַגָּדוֹל Jos 14:15 (E); אָ׳ בְּלִיַּעַל Pr 6:12 (‖ אִישׁ אָוֶן cf. 1 S 25:25 & v. בליעל); = any one Lv 1:2 Nu 9:6, 7 Jb 20:29; 27:13 Pr 15:20; 21:16, 20; 24:30 Ec 7:20 + oft. WisdLt, Je 2:6; 4:25 Ne 2:12, cf. נֶפֶשׁ א׳ Nu 19:11, 13 +; seld. man opp. woman Gn 2:22(×2), 23, 25; 3:8, 12, 17, 20, 21 Ec 7:28.
-`,
-        "דָּמ֣וֹ": `† דָּם360  n.m. Gn 9:6 blood (NH id. Arabic دَمٌ, Ethiopic ደም: Assyrian damu Nor 239 ZimBP 72, 76; Aramaic דַּם, דְּמָא, ܕܶܡ, ܕܡܳܐ )—
-1.  blood of man or animal, = the life (נֶפֶשׁ) Gn 9:4 (P) Dt 12:23; Lv 17:14(×2) (H); cf. נֶפֶשׁ הַבָּשָׂר בַּדָּם הִוא v 11 (H & דִּמְכֶם לְנַפְשֹׁתֵיכֶם Gn 9:5 (P); see also ψ 72:14 וְיֵיקַר דָּמָם בְּעֵינָיו; hence blood of animals not to be eaten Lv 3:17; 7:26, 27 (all P) 17:10(×2), 12(×2), 14; 19:26 (all H) Dt 12:16, 23; 15:23; 1 S 14:32, 33, 34; Ez 33:25 (cf. RSK 310), but to be poured out & covered with dust Lv 17:13 (cf. RSSem i. 216 f.).
-`,
-    "יִשָּׁפֵ֑ךְ":`†Niph.   Pf. 3 ms. נִשְׁפַּךְ La 2:11, etc.; Impf. 3 ms. יִשָּׁפֵךְ Gn 9:6 +, etc.; Inf. cstr. הִשָּׁפֵךְ Ez 16:36;—be poured out: of ashes 1 K 13:3, 5, blood (עַל loc.) Dt 12:27; be shed, of blood Gn 9:6 (P) Dt 19:10; in fig. La 2:11 my liver is poured לָאָרֶץ (cf. Qal 1 a ad fin.); ψ 22:15 I am poured out like water (nerveless, helpless); subj. נְּחֻשְׁתֵּךְ`,
-    "כִּ֚י": `י (conj) heb
-that,  for,  because,  when,  as though,  as,  because that,  but,  then, certainly,  except,  surely,  sincethatyea,  indeed
-when (of time)when,  if,  though (with a concessive force)`,
-    "בְּצֶ֣לֶם": `בְּ◌ prep. 
-I  prefix (b. h.) in, within, on &c. בו ביום on that day; באותו מקום in that very place; מיניה וביה from it and in it, i.e. out of the very thing. B. Mets. 101ᵇ אגרא … מיניה וביה she hired carriers, paying them from the very wine which the man had placed in her storeroom.—בֹּון = בְּהוֹן. Y. Ber. II, 4ᶜ bot.; a. fr.
-
-† צֶ֫לֶם  n.m. Ez 16:17 image (something cut out, cf. פֶּסֶל; Nö ‘Schnitzbild’);—צ׳ abs. ψ 39:7, cstr. Gn 1:27 +; sf. צַלְמוֹ v 27; 5:3, צַלְמֵנוּ 1:26, צַלְמָם ψ 73:20; pl. cstr. צַלְמֵי 1 S 6:5(×2) +, sf. צְלָמָיו 2 K 11:18; 2 Ch 23:17, צַלְמֵיכֶם Am 5:26;—
-1.  images of tumours and mice (of gold) 1 S 6:5(×2), 11; especially of heathen gods Am 5:26 (text dub.; del. We as gloss, cf. GASm Dr), 2 K 11:18 = 2 Ch 23:17 (both c. vb. שִׁבְּרוּ), Ez 7:20, so צ׳ זָכָר 16:17 (i.e. in male form, according to fig. of harlotry for idolatry); צַלְמֵי מַסֵּכֹתָם Nu 33:52 their molten images; of painted pictures of men Ez 23:14.
-2.  image, likeness, of resemblance, בְּצ׳ (בָּרָא) עָשָׂה, of God’s making man in his own image, Gn 1:26 (‖ כִּדְמוּתֵנוּ), v 27:27; 9:6, כְּצ׳ 5:3 (‖ בִּדְמוּתוֹ; all P).
-3.  fig. = mere, empty, image, semblance, בְּצ׳ ψ 39:7 as (ב essentiae) a (mere) semblance man walks about; צַלְמָם תִּבְזֶה 73:20 thou wilt despise their semblance.
-`,
-    "אֱלֹהִ֔ים": `אֱלֹהִים (n-m) heb
-(plural intensive-singular meaning)God
-godlike one
-works or special possessions of God`,
-    "עָשָׂ֖ה": `to do,  fashion,  accomplish,  make(Qal)to do,  work,  make,  produceto do
-to work
-to deal (with)
-to act,  act with effect,  effect`,
-    "אֶת־הָאָדָֽם׃": `אֵת (prt) heb
-sign of the definite direct object,  not translated in English but generally preceding and indicating the accusative
-`
+    "שֹׁפֵךְ֙": [{
+    "headword": "שָׁפַךְ",
+    "parent_lexicon": "BDB Augmented Strong",
+    "content": {
+      "morphology": "v",
+      "senses": [
+        {
+          "definition": "to pour,  pour out,  spill",
+          "senses": [
+            {
+              "senses": [
+                {
+                  "definition": "to pour,  pour out"
+                },
+                {
+                  "definition": "to shed (blood)"
+                },
+                {
+                  "definition": "to pour out (anger or heart) (fig)"
+                }
+              ],
+              "grammar": {
+                "verbal_stem": "Qal"
+              }
+            },
+            {
+              "definition": " to be poured out,  be shed",
+              "grammar": {
+                "verbal_stem": "Niphal"
+              }
+            },
+            {
+              "definition": " to be poured out,  be shed",
+              "grammar": {
+                "verbal_stem": "Pual"
+              }
+            },
+            {
+              "senses": [
+                {
+                  "definition": "to be poured out"
+                },
+                {
+                  "definition": "to pour out oneself"
+                }
+              ],
+              "grammar": {
+                "verbal_stem": "Hithpael"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "strong_number": "8210",
+    "transliteration": "shâphak",
+    "pronunciation": "shaw-fak'",
+    "language_code": "heb",
+    "parent_lexicon_details": {
+      "name": "BDB Augmented Strong",
+      "language": "heb.biblical",
+      "to_language": "eng",
+      "text_categories": [
+        "Tanakh, Torah",
+        "Tanakh, Prophets",
+        "Tanakh, Writings"
+      ],
+      "source": "Open Scriptures on GitHub",
+      "source_url": "https://github.com/openscriptures/strongs",
+      "attribution": "Based on the work of Larry Pierce at the Online Bible",
+      "attribution_url": "http://www.blueletterbible.org/contact/contact_gen.cfm"
+    }
+  }],
+    "דַּ֣ם":   [{
+    "headword": "דָּם",
+    "parent_lexicon": "BDB Augmented Strong",
+    "content": {
+      "morphology": "n-m",
+      "senses": [
+        {
+          "definition": "blood",
+          "senses": [
+            {
+              "definition": "of wine (fig.)"
+            }
+          ]
+        }
+      ]
+    },
+    "strong_number": "1818",
+    "transliteration": "dâm",
+    "pronunciation": "dawm",
+    "language_code": "heb",
+    "parent_lexicon_details": {
+      "name": "BDB Augmented Strong",
+      "language": "heb.biblical",
+      "to_language": "eng",
+      "text_categories": [
+        "Tanakh, Torah",
+        "Tanakh, Prophets",
+        "Tanakh, Writings"
+      ],
+      "source": "Open Scriptures on GitHub",
+      "source_url": "https://github.com/openscriptures/strongs",
+      "attribution": "Based on the work of Larry Pierce at the Online Bible",
+      "attribution_url": "http://www.blueletterbible.org/contact/contact_gen.cfm"
+    }
+  }],
+    "הָֽאָדָ֔ם": [ {
+    "headword": "הָ־",
+    "parent_lexicon": "Jastrow Dictionary",
+    "rid": "E00003",
+    "refs": [
+      "Shabbat 145a"
+    ],
+    "content": {
+      "senses": [
+        {
+          "definition": " (followed by Dagesh forte) "
+        },
+        {
+          "definition": " the definite article, <i>the</i>. <a class=\"refLink\" href=\"/Mishnah_Berakhot.1.1\" data-ref=\"Mishnah Berakhot 1:1\">Ber. I, 1</a> <span dir=\"rtl\">הָאַשְׁמוֹרָה הָרִאשׁוֹנָה</span> the first night watch. Ib. <span dir=\"rtl\">הַשַּׁחַר</span> the dawn; a. v. fr.",
+          "number": "1)"
+        },
+        {
+          "definition": " an interjection, <i>by</i>. <a class=\"refLink\" href=\"/Shabbat.145a\" data-ref=\"Shabbat 145a\">Sabb. 145ᵃ</a>, v. <a dir=\"rtl\" class=\"refLink\" href=\"/Jastrow,_אֱלוֹהַּ.1\" data-ref=\"Jastrow, אֱלוֹהַּ 1\">אֱלוֹהַּ</a>; a. fr.",
+          "number": "—2)"
+        },
+        {
+          "definition": " (ch.) = <a dir=\"rtl\" class=\"refLink\" href=\"/Jastrow,_הָא I.1\" data-ref=\"Jastrow, הָא I 1\">הָא</a> q. v.",
+          "number": "—3)"
+        }
+      ]
+    },
+    "plural_form": [],
+    "alt_headwords": [
+      "הַ־"
+    ],
+    "quotes": [],
+    "prev_hw": "הַ־",
+    "next_hw": "ה\"א",
+    "parent_lexicon_details": {
+      "name": "Jastrow Dictionary",
+      "language": "heb.talmudic",
+      "to_language": "eng",
+      "text_categories": [],
+      "source": "Jastrow Dictionary",
+      "attribution": "Rabbi Marcus Jastrow",
+      "index_title": "Jastrow",
+      "version_title": "London, Luzac, 1903",
+      "version_lang": "en",
+      "should_autocomplete": true
+    }
+  },
+        {
+    "headword": "אָדָם",
+    "parent_lexicon": "BDB Augmented Strong",
+    "content": {
+      "morphology": "n-m",
+      "senses": [
+        {
+          "definition": "man,  mankind",
+          "senses": [
+            {
+              "definition": "man,  human being"
+            },
+            {
+              "definition": "man,  mankind (much more frequently intended sense in OT)"
+            },
+            {
+              "definition": "Adam,  first man"
+            },
+            {
+              "definition": "city in Jordan valley"
+            }
+          ]
+        }
+      ]
+    },
+    "strong_number": "120",
+    "transliteration": "ʼâdâm",
+    "pronunciation": "aw-dawm'",
+    "language_code": "heb",
+    "parent_lexicon_details": {
+      "name": "BDB Augmented Strong",
+      "language": "heb.biblical",
+      "to_language": "eng",
+      "text_categories": [
+        "Tanakh, Torah",
+        "Tanakh, Prophets",
+        "Tanakh, Writings"
+      ],
+      "source": "Open Scriptures on GitHub",
+      "source_url": "https://github.com/openscriptures/strongs",
+      "attribution": "Based on the work of Larry Pierce at the Online Bible",
+      "attribution_url": "http://www.blueletterbible.org/contact/contact_gen.cfm"
+    }
+  }],
+    "בָּֽאָדָ֖ם": [
+       {
+    "headword": "בְּ־ I",
+    "parent_lexicon": "Jastrow Dictionary",
+    "rid": "B00003",
+    "refs": [
+      "Bava Metzia 101b:13"
+    ],
+    "content": {
+      "senses": [
+        {
+          "definition": " prefix (b. h.) <i>in, within, on</i> &c. <span dir=\"rtl\">בו ביום</span> on that day; <span dir=\"rtl\">באותו מקום</span> in that very place; <span dir=\"rtl\">מיניה וביה</span> from it and in it, i.e. <i>out of the very thing</i>. <a class=\"refLink\" href=\"/Bava_Metzia.101b.13\" data-ref=\"Bava Metzia 101b:13\">B. Mets. 101ᵇ</a> <span dir=\"rtl\">אגרא … מיניה וביה</span> she hired carriers, paying them from the very wine which the man had placed in her storeroom.—<a dir=\"rtl\" class=\"refLink\" href=\"/Jastrow,_בּוּן I.1\" data-ref=\"Jastrow, בּוּן I 1\">בֹּון</a> = <span dir=\"rtl\">בְּהוֹן</span>. Y. Ber. II, 4ᶜ bot.; a. fr."
+        }
+      ]
+    },
+    "plural_form": [],
+    "alt_headwords": [],
+    "quotes": [],
+    "prev_hw": "ב׳",
+    "next_hw": "בְּ־ II",
+    "parent_lexicon_details": {
+      "name": "Jastrow Dictionary",
+      "language": "heb.talmudic",
+      "to_language": "eng",
+      "text_categories": [],
+      "source": "Jastrow Dictionary",
+      "attribution": "Rabbi Marcus Jastrow",
+      "index_title": "Jastrow",
+      "version_title": "London, Luzac, 1903",
+      "version_lang": "en",
+      "should_autocomplete": true
+    }
+  } , {
+    "headword": "אָדָם",
+    "parent_lexicon": "BDB Augmented Strong",
+    "content": {
+      "morphology": "n-m",
+      "senses": [
+        {
+          "definition": "man,  mankind",
+          "senses": [
+            {
+              "definition": "man,  human being"
+            },
+            {
+              "definition": "man,  mankind (much more frequently intended sense in OT)"
+            },
+            {
+              "definition": "Adam,  first man"
+            },
+            {
+              "definition": "city in Jordan valley"
+            }
+          ]
+        }
+      ]
+    },
+    "strong_number": "120",
+    "transliteration": "ʼâdâm",
+    "pronunciation": "aw-dawm'",
+    "language_code": "heb",
+    "parent_lexicon_details": {
+      "name": "BDB Augmented Strong",
+      "language": "heb.biblical",
+      "to_language": "eng",
+      "text_categories": [
+        "Tanakh, Torah",
+        "Tanakh, Prophets",
+        "Tanakh, Writings"
+      ],
+      "source": "Open Scriptures on GitHub",
+      "source_url": "https://github.com/openscriptures/strongs",
+      "attribution": "Based on the work of Larry Pierce at the Online Bible",
+      "attribution_url": "http://www.blueletterbible.org/contact/contact_gen.cfm"
+    }
+  }],
+"דָּמ֣וֹ": [{
+    "headword": "דָּם",
+    "parent_lexicon": "BDB Augmented Strong",
+    "content": {
+      "morphology": "n-m",
+      "senses": [
+        {
+          "definition": "blood",
+          "senses": [
+            {
+              "definition": "of wine (fig.)"
+            }
+          ]
+        }
+      ]
+    },
+    "strong_number": "1818",
+    "transliteration": "dâm",
+    "pronunciation": "dawm",
+    "language_code": "heb",
+    "parent_lexicon_details": {
+      "name": "BDB Augmented Strong",
+      "language": "heb.biblical",
+      "to_language": "eng",
+      "text_categories": [
+        "Tanakh, Torah",
+        "Tanakh, Prophets",
+        "Tanakh, Writings"
+      ],
+      "source": "Open Scriptures on GitHub",
+      "source_url": "https://github.com/openscriptures/strongs",
+      "attribution": "Based on the work of Larry Pierce at the Online Bible",
+      "attribution_url": "http://www.blueletterbible.org/contact/contact_gen.cfm"
+    }
+  }],
+    "יִשָּׁפֵ֑ךְ" :  [{
+    "headword": "שָׁפַךְ",
+    "parent_lexicon": "BDB Augmented Strong",
+    "content": {
+      "morphology": "v",
+      "senses": [
+        {
+          "definition": "to pour,  pour out,  spill",
+          "senses": [
+            {
+              "senses": [
+                {
+                  "definition": "to pour,  pour out"
+                },
+                {
+                  "definition": "to shed (blood)"
+                },
+                {
+                  "definition": "to pour out (anger or heart) (fig)"
+                }
+              ],
+              "grammar": {
+                "verbal_stem": "Qal"
+              }
+            },
+            {
+              "definition": " to be poured out,  be shed",
+              "grammar": {
+                "verbal_stem": "Niphal"
+              }
+            },
+            {
+              "definition": " to be poured out,  be shed",
+              "grammar": {
+                "verbal_stem": "Pual"
+              }
+            },
+            {
+              "senses": [
+                {
+                  "definition": "to be poured out"
+                },
+                {
+                  "definition": "to pour out oneself"
+                }
+              ],
+              "grammar": {
+                "verbal_stem": "Hithpael"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "strong_number": "8210",
+    "transliteration": "shâphak",
+    "pronunciation": "shaw-fak'",
+    "language_code": "heb",
+    "parent_lexicon_details": {
+      "name": "BDB Augmented Strong",
+      "language": "heb.biblical",
+      "to_language": "eng",
+      "text_categories": [
+        "Tanakh, Torah",
+        "Tanakh, Prophets",
+        "Tanakh, Writings"
+      ],
+      "source": "Open Scriptures on GitHub",
+      "source_url": "https://github.com/openscriptures/strongs",
+      "attribution": "Based on the work of Larry Pierce at the Online Bible",
+      "attribution_url": "http://www.blueletterbible.org/contact/contact_gen.cfm"
+    }
+  }],
+    "כִּ֚י": [{
+    "headword": "כִּי",
+    "parent_lexicon": "BDB Augmented Strong",
+    "content": {
+      "morphology": "conj",
+      "senses": [
+        {
+          "definition": "that,  for,  because,  when,  as though,  as,  because that,  but,  then, certainly,  except,  surely,  since",
+          "senses": [
+            {
+              "definition": "that",
+              "senses": [
+                {
+                  "definition": "yea,  indeed"
+                }
+              ]
+            },
+            {
+              "definition": "when (of time)",
+              "senses": [
+                {
+                  "definition": "when,  if,  though (with a concessive force)"
+                }
+              ]
+            },
+            {
+              "definition": "because,  since (causal connection)"
+            },
+            {
+              "definition": "but (after negative)"
+            },
+            {
+              "definition": "that if,  for if,  indeed if,  for though,  but if"
+            },
+            {
+              "definition": "but rather,  but"
+            },
+            {
+              "definition": "except that"
+            },
+            {
+              "definition": "only,  nevertheless"
+            },
+            {
+              "definition": "surely"
+            },
+            {
+              "definition": "that is"
+            },
+            {
+              "definition": "but if"
+            },
+            {
+              "definition": "for though"
+            },
+            {
+              "definition": "forasmuch as,  for therefore"
+            }
+          ]
+        }
+      ]
+    },
+    "strong_number": "3588",
+    "transliteration": "kîy",
+    "pronunciation": "kee",
+    "language_code": "heb",
+    "parent_lexicon_details": {
+      "name": "BDB Augmented Strong",
+      "language": "heb.biblical",
+      "to_language": "eng",
+      "text_categories": [
+        "Tanakh, Torah",
+        "Tanakh, Prophets",
+        "Tanakh, Writings"
+      ],
+      "source": "Open Scriptures on GitHub",
+      "source_url": "https://github.com/openscriptures/strongs",
+      "attribution": "Based on the work of Larry Pierce at the Online Bible",
+      "attribution_url": "http://www.blueletterbible.org/contact/contact_gen.cfm"
+    }
+  }],
+    "בְּצֶ֣לֶם": [ {
+    "headword": "בְּ◌",
+    "parent_lexicon": "Klein Dictionary",
+    "content": {
+      "morphology": "prep.",
+      "senses": [
+        {
+          "definition": "in, within (as in <span dir=\"rtl\">בְּעֵינֵי</span>, ‘in the eyes of’).",
+          "alternative": "(also <a dir=\"rtl\" class=\"refLink\" href=\"/Klein Dictionary,_בְּ◌.1\" data-ref=\"Klein Dictionary, בְּ◌ 1\">בָּ◌</a>, <a dir=\"rtl\" class=\"refLink\" href=\"/Klein Dictionary,_בְּ◌.1\" data-ref=\"Klein Dictionary, בְּ◌ 1\">בַּ◌</a>, <a dir=\"rtl\" class=\"refLink\" href=\"/Klein Dictionary,_בְּ◌.1\" data-ref=\"Klein Dictionary, בְּ◌ 1\">בֵּ◌</a>, <a dir=\"rtl\" class=\"refLink\" href=\"/Klein Dictionary,_בְּ◌.1\" data-ref=\"Klein Dictionary, בְּ◌ 1\">בֶּ◌</a>, <a dir=\"rtl\" class=\"refLink\" href=\"/Klein Dictionary,_בְּ◌.1\" data-ref=\"Klein Dictionary, בְּ◌ 1\">בִּ◌</a>, according to its position)",
+          "number": "1"
+        },
+        {
+          "definition": "on (as in <span dir=\"rtl\">בַּמִּזְבֵּחַ</span>, ‘on the altar’).",
+          "number": "2"
+        },
+        {
+          "definition": "with (as in <span dir=\"rtl\">בַּשֵּׁבֶט</span>, <span dir=\"rtl\">בַּמַּטֶּה</span>, ‘with the rod’).",
+          "number": "3"
+        },
+        {
+          "definition": "for, for the price of (as in <span dir=\"rtl\">בְּרָחֵל</span>, ‘for <a dir=\"rtl\" class=\"refLink\" href=\"/Klein Dictionary,_רָחֵל ᴵ.1\" data-ref=\"Klein Dictionary, רָחֵל ᴵ 1\">רָחֵל</a>’; <span dir=\"rtl\">בְּכֶסֶף מָלֵא</span>, ‘for the full price’).",
+          "number": "4"
+        },
+        {
+          "definition": "as, in the condition of (as in <span dir=\"rtl\">בְּעֶזְרִי</span>, ‘as my help’).",
+          "number": "5"
+        }
+      ]
+    },
+    "rid": "B00002",
+    "refs": [
+      "Klein Dictionary, בְּ◌ 1",
+      "Klein Dictionary, בְּ◌ 1",
+      "Klein Dictionary, בְּ◌ 1",
+      "Klein Dictionary, בְּ◌ 1",
+      "Klein Dictionary, בְּ◌ 1",
+      "Klein Dictionary, בְּ◌ 1",
+      "Klein Dictionary, בְּ◌ 1",
+      "Klein Dictionary, בְּ◌ 1",
+      "Klein Dictionary, בְּ◌ 1",
+      "Klein Dictionary, בְּ◌ 1",
+      "Klein Dictionary, רָחֵל ᴵ 1",
+      "Klein Dictionary, בְּ◌ 1",
+      "Klein Dictionary, בְּ◌ 1",
+      "Klein Dictionary, בְּ◌ 1",
+      "Klein Dictionary, בְּ◌ 1"
+    ],
+    "prev_hw": "ב",
+    "next_hw": "בָּא",
+    "notes": "[cp. Ugar., Phoen. <a dir=\"rtl\" class=\"refLink\" href=\"/Klein Dictionary,_בְּ◌.1\" data-ref=\"Klein Dictionary, בְּ◌ 1\">ב◌</a> (= in, with), Aram.-Syr. <a dir=\"rtl\" class=\"refLink\" href=\"/Klein Dictionary,_בְּ◌.1\" data-ref=\"Klein Dictionary, בְּ◌ 1\">בְּ◌</a> (= in, with), Arab. <i>bi</i>- (= in, by), Ethiop. <i>ba</i> (= in).]",
+    "parent_lexicon_details": {
+      "name": "Klein Dictionary",
+      "language": "heb.modern",
+      "to_language": "eng",
+      "text_categories": [],
+      "source": "Klein Dictionary",
+      "attribution": "Ezra Klein",
+      "index_title": "Klein Dictionary",
+      "version_title": "Carta Jerusalem; 1st edition, 1987",
+      "version_lang": "en",
+      "should_autocomplete": true
+    }
+  },
+        {
+    "headword": "צֶלֶם",
+    "parent_lexicon": "BDB Augmented Strong",
+    "content": {
+      "morphology": "n-m",
+      "senses": [
+        {
+          "definition": "image",
+          "senses": [
+            {
+              "definition": "images (of tumours,  mice,  heathen gods)"
+            },
+            {
+              "definition": "image,  likeness (of resemblance)"
+            },
+            {
+              "definition": "mere,  empty,  image,  semblance (fig.)"
+            }
+          ]
+        }
+      ]
+    },
+    "strong_number": "6754",
+    "transliteration": "tselem",
+    "pronunciation": "tseh'-lem",
+    "language_code": "heb",
+    "parent_lexicon_details": {
+      "name": "BDB Augmented Strong",
+      "language": "heb.biblical",
+      "to_language": "eng",
+      "text_categories": [
+        "Tanakh, Torah",
+        "Tanakh, Prophets",
+        "Tanakh, Writings"
+      ],
+      "source": "Open Scriptures on GitHub",
+      "source_url": "https://github.com/openscriptures/strongs",
+      "attribution": "Based on the work of Larry Pierce at the Online Bible",
+      "attribution_url": "http://www.blueletterbible.org/contact/contact_gen.cfm"
+    }
+  },
+    ],
+    "אֱלֹהִ֔ים": [{
+    "headword": "אֱלֹהִים",
+    "parent_lexicon": "BDB Augmented Strong",
+    "content": {
+      "morphology": "n-m",
+      "senses": [
+        {
+          "definition": "(plural intensive-singular meaning)",
+          "senses": [
+            {
+              "definition": "God"
+            },
+            {
+              "definition": "godlike one"
+            },
+            {
+              "definition": "works or special possessions of God"
+            }
+          ]
+        },
+        {
+          "definition": "(plural)",
+          "senses": [
+            {
+              "definition": "rulers,  judges"
+            },
+            {
+              "definition": "divine ones"
+            },
+            {
+              "definition": "angels"
+            },
+            {
+              "definition": "gods"
+            }
+          ]
+        }
+      ]
+    },
+    "strong_number": "430",
+    "transliteration": "ʼĕlôhîym",
+    "pronunciation": "el-o-heem'",
+    "language_code": "heb",
+    "parent_lexicon_details": {
+      "name": "BDB Augmented Strong",
+      "language": "heb.biblical",
+      "to_language": "eng",
+      "text_categories": [
+        "Tanakh, Torah",
+        "Tanakh, Prophets",
+        "Tanakh, Writings"
+      ],
+      "source": "Open Scriptures on GitHub",
+      "source_url": "https://github.com/openscriptures/strongs",
+      "attribution": "Based on the work of Larry Pierce at the Online Bible",
+      "attribution_url": "http://www.blueletterbible.org/contact/contact_gen.cfm"
+    }
+  }],
+    "עָשָׂ֖ה":  [{
+    "headword": "עָשָׂה",
+    "parent_lexicon": "BDB Augmented Strong",
+    "content": {
+      "morphology": "v",
+      "senses": [
+        {
+          "definition": "to do,  fashion,  accomplish,  make",
+          "senses": [
+            {
+              "senses": [
+                {
+                  "definition": "to do,  work,  make,  produce",
+                  "senses": [
+                    {
+                      "definition": "to do"
+                    },
+                    {
+                      "definition": "to work"
+                    },
+                    {
+                      "definition": "to deal (with)"
+                    },
+                    {
+                      "definition": "to act,  act with effect,  effect"
+                    }
+                  ]
+                },
+                {
+                  "definition": "to make",
+                  "senses": [
+                    {
+                      "definition": "to make"
+                    },
+                    {
+                      "definition": "to produce"
+                    },
+                    {
+                      "definition": "to prepare"
+                    },
+                    {
+                      "definition": "to make (an offering)"
+                    },
+                    {
+                      "definition": "to attend to,  put in order"
+                    },
+                    {
+                      "definition": "to observe,  celebrate"
+                    },
+                    {
+                      "definition": "to acquire (property)"
+                    },
+                    {
+                      "definition": "to appoint,  ordain,  institute"
+                    },
+                    {
+                      "definition": "to bring about"
+                    },
+                    {
+                      "definition": "to use"
+                    },
+                    {
+                      "definition": "to spend,  pass"
+                    }
+                  ]
+                }
+              ],
+              "grammar": {
+                "verbal_stem": "Qal"
+              }
+            },
+            {
+              "senses": [
+                {
+                  "definition": "to be done"
+                },
+                {
+                  "definition": "to be made"
+                },
+                {
+                  "definition": "to be produced"
+                },
+                {
+                  "definition": "to be offered"
+                },
+                {
+                  "definition": "to be observed"
+                },
+                {
+                  "definition": "to be used"
+                }
+              ],
+              "grammar": {
+                "verbal_stem": "Niphal"
+              }
+            },
+            {
+              "definition": " to be made",
+              "grammar": {
+                "verbal_stem": "Pual"
+              }
+            }
+          ]
+        },
+        {
+          "definition": " to press,  squeeze",
+          "grammar": {
+            "verbal_stem": "Piel"
+          }
+        }
+      ]
+    },
+    "strong_number": "6213",
+    "transliteration": "ʻâsâh",
+    "pronunciation": "aw-saw'",
+    "language_code": "heb",
+    "parent_lexicon_details": {
+      "name": "BDB Augmented Strong",
+      "language": "heb.biblical",
+      "to_language": "eng",
+      "text_categories": [
+        "Tanakh, Torah",
+        "Tanakh, Prophets",
+        "Tanakh, Writings"
+      ],
+      "source": "Open Scriptures on GitHub",
+      "source_url": "https://github.com/openscriptures/strongs",
+      "attribution": "Based on the work of Larry Pierce at the Online Bible",
+      "attribution_url": "http://www.blueletterbible.org/contact/contact_gen.cfm"
+    }
+  }],
+    "אֶת־הָאָדָֽם׃": [
+{
+    "headword": "אֵת",
+    "parent_lexicon": "BDB Augmented Strong",
+    "content": {
+      "morphology": "prt",
+      "senses": [
+        {
+          "definition": "sign of the definite direct object,  not translated in English but generally preceding and indicating the accusative"
+        }
+      ]
+    },
+    "strong_number": "853",
+    "transliteration": "ʼêth",
+    "pronunciation": "ayth",
+    "language_code": "heb",
+    "parent_lexicon_details": {
+      "name": "BDB Augmented Strong",
+      "language": "heb.biblical",
+      "to_language": "eng",
+      "text_categories": [
+        "Tanakh, Torah",
+        "Tanakh, Prophets",
+        "Tanakh, Writings"
+      ],
+      "source": "Open Scriptures on GitHub",
+      "source_url": "https://github.com/openscriptures/strongs",
+      "attribution": "Based on the work of Larry Pierce at the Online Bible",
+      "attribution_url": "http://www.blueletterbible.org/contact/contact_gen.cfm"
+    }
+  },
+       {
+    "headword": "הָ־",
+    "parent_lexicon": "Jastrow Dictionary",
+    "rid": "E00003",
+    "refs": [
+      "Shabbat 145a"
+    ],
+    "content": {
+      "senses": [
+        {
+          "definition": " (followed by Dagesh forte) "
+        },
+        {
+          "definition": " the definite article, <i>the</i>. <a class=\"refLink\" href=\"/Mishnah_Berakhot.1.1\" data-ref=\"Mishnah Berakhot 1:1\">Ber. I, 1</a> <span dir=\"rtl\">הָאַשְׁמוֹרָה הָרִאשׁוֹנָה</span> the first night watch. Ib. <span dir=\"rtl\">הַשַּׁחַר</span> the dawn; a. v. fr.",
+          "number": "1)"
+        },
+        {
+          "definition": " an interjection, <i>by</i>. <a class=\"refLink\" href=\"/Shabbat.145a\" data-ref=\"Shabbat 145a\">Sabb. 145ᵃ</a>, v. <a dir=\"rtl\" class=\"refLink\" href=\"/Jastrow,_אֱלוֹהַּ.1\" data-ref=\"Jastrow, אֱלוֹהַּ 1\">אֱלוֹהַּ</a>; a. fr.",
+          "number": "—2)"
+        },
+        {
+          "definition": " (ch.) = <a dir=\"rtl\" class=\"refLink\" href=\"/Jastrow,_הָא I.1\" data-ref=\"Jastrow, הָא I 1\">הָא</a> q. v.",
+          "number": "—3)"
+        }
+      ]
+    },
+    "plural_form": [],
+    "alt_headwords": [
+      "הַ־"
+    ],
+    "quotes": [],
+    "prev_hw": "הַ־",
+    "next_hw": "ה\"א",
+    "parent_lexicon_details": {
+      "name": "Jastrow Dictionary",
+      "language": "heb.talmudic",
+      "to_language": "eng",
+      "text_categories": [],
+      "source": "Jastrow Dictionary",
+      "attribution": "Rabbi Marcus Jastrow",
+      "index_title": "Jastrow",
+      "version_title": "London, Luzac, 1903",
+      "version_lang": "en",
+      "should_autocomplete": true
+    }
+  }, {
+    "headword": "אָדָם",
+    "parent_lexicon": "BDB Augmented Strong",
+    "content": {
+      "morphology": "n-m",
+      "senses": [
+        {
+          "definition": "man,  mankind",
+          "senses": [
+            {
+              "definition": "man,  human being"
+            },
+            {
+              "definition": "man,  mankind (much more frequently intended sense in OT)"
+            },
+            {
+              "definition": "Adam,  first man"
+            },
+            {
+              "definition": "city in Jordan valley"
+            }
+          ]
+        }
+      ]
+    },
+    "strong_number": "120",
+    "transliteration": "ʼâdâm",
+    "pronunciation": "aw-dawm'",
+    "language_code": "heb",
+    "parent_lexicon_details": {
+      "name": "BDB Augmented Strong",
+      "language": "heb.biblical",
+      "to_language": "eng",
+      "text_categories": [
+        "Tanakh, Torah",
+        "Tanakh, Prophets",
+        "Tanakh, Writings"
+      ],
+      "source": "Open Scriptures on GitHub",
+      "source_url": "https://github.com/openscriptures/strongs",
+      "attribution": "Based on the work of Larry Pierce at the Online Bible",
+      "attribution_url": "http://www.blueletterbible.org/contact/contact_gen.cfm"
+    }
+  }
+    ]
 
 }
 
@@ -46,7 +884,7 @@ class Word {
     word: string;
     verse: string;
     verse_index: number;
-    definition: string; /*todo move*/
+    definition: any[]; /*todo move*/
 
     constructor(word: string, verse: string, index: number) {
         this.word = word;

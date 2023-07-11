@@ -6,13 +6,13 @@
 .TorahMiniApp {
     display: flex;
     flex-direction: column;
+    min-height: 100%;
 }
 
 .TorahMiniApp div.flex {
     display: flex;
     flex-basis: 50%;
     flex-grow: 1;
-    margin: 4px;
 }
 
 .TorahMiniApp div.flex-row {
@@ -31,4 +31,10 @@
 
 .verseWord:hover {
     cursor: pointer;
+}
+
+.divider-block {
+    background-color: #5BCEFA;
+    height: 5px;
+    margin: 10px 0px;
 }

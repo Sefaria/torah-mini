@@ -49,12 +49,17 @@ function TorahMiniApp () {
     }
 
     return (<div className="TorahMiniApp">
-            Genesis 9:6
+            <div className="flex-column">
+                <div className="divider-block"></div>
+
+                Genesis 9:6
             <VerseReader verse={currentVerse} currentWord={currentWord} setCurrentWord={setCurrentWord}
                          setStickyWord={setStickyWord}/>
             {<WordNotes wordNote={currentVerseNotes[currentWord].notes} currentWord={currentWord}
                                       updateWordNote={updateWordNote}  currentVerse={currentVerse}
             nextWord={nextWord}/>}
+                <div class="divider-block"></div>
+            </div>
             <div className="dict-translation" className="flex">
                 <div className="flex">
                     <DictionaryDisplay verse={currentVerse} currentWord={currentWord}/>
@@ -73,6 +78,8 @@ Was humankind made.
                     <button onClick={() => setShowTranslation(false)}>Hide Translation</button>
 </div>
             }
+            <div className="divider-block"></div>
+
         </div>
     )
 }
