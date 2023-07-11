@@ -30,6 +30,11 @@ function TorahMiniApp () {
     //     }
     // }
 
+    const setCurrentWordAndReset = n => {
+        setTranslateMode(false);
+        setCurrentWord(n);
+    }
+
     const nextWord = (goBackwards: false) => {
         const wordCount = currentVerse.words.length;
         const increment = goBackwards ? -1 : 1;
@@ -38,7 +43,7 @@ function TorahMiniApp () {
         if(currentVerseNotes[currentWord].notes.length > 0) {
             setShowGreatJob(true);
         }
-        setCurrentWord(nextWord);
+        setCurrentWordAndReset(nextWord);
     }
 
     const showTranslateEntireSentence = () => {
@@ -62,16 +67,17 @@ function TorahMiniApp () {
                 <div className="divider-block"></div>
 
                 Genesis 9:6
-            <VerseReader verse={currentVerse} currentWord={currentWord} setCurrentWord={setCurrentWord}
+            <VerseReader verse={currentVerse} currentWord={currentWord} setCurrentWord={setCurrentWordAndReset}
                          setStickyWord={setStickyWord}/>
             {<WordNotes wordNote={currentVerseNotes[currentWord].notes} currentWord={currentWord}
                                       updateWordNote={updateWordNote}  currentVerse={currentVerse}
-            nextWord={nextWord}/>}
+            nextWord={nextWord}
+            setTranslateMode={setTranslateMode}/>}
                 <div class="divider-block"></div>
             </div>
             <div className="dict-translation" className="flex">
-                <div className="flex">
-                    { translateMode ? <>            Translate entire sentence:
+                <div className="flex-column translate-verse-box">
+                    { translateMode ? <>            Translate entire verse:
             <div className="full-translation-container"><textarea dir="ltr"></textarea></div>
             <br/>
                         {!showTranslation ? <button onClick={() => setShowTranslation(true)}>Check Translation</button> :
@@ -82,13 +88,13 @@ Was humankind made.
                     <button onClick={() => setShowTranslation(false)}>Hide Translation</button>
 </div>
             }
-            <div className="divider-block"></div></> : <><DictionaryDisplay verse={currentVerse} currentWord={currentWord}/>
+           </> : <><DictionaryDisplay verse={currentVerse} currentWord={currentWord}/>
                                         <VerbChart/>
 </>}
                 </div>
-                <div className="flex"><TranslationDisplay setCurrentWord={setCurrentWord} currentWord={currentWord} verse={currentVerse} verseNotes={currentVerseNotes}/></div>
+                <div className="flex"><TranslationDisplay setCurrentWord={setCurrentWordAndReset} currentWord={currentWord} verse={currentVerse} verseNotes={currentVerseNotes}/></div>
             </div>
-
+ <div className="divider-block"></div>
         </div>
     )
 }

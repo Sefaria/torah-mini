@@ -55,3 +55,7 @@
   50% { opacity: 0; }
   100% { opacity: 0; }
 }
+
+.translate-verse-box {
+    margin: 5px;
+}

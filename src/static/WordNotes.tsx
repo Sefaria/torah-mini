@@ -7,11 +7,12 @@ interface WordNotesProps {
     wordNote: string;
     currentWord: number;
     updateWordNote: any;
-    currentVerse: Verse
+    currentVerse: Verse;
     nextWord: any;
+    setTranslateMode: any;
 }
 
-const WordNotes: FC<WordNotesProps> = ({wordNote, currentWord, updateWordNote, currentVerse, nextWord}: WordNotesProps): ReactElement => {
+const WordNotes: FC<WordNotesProps> = ({wordNote, currentWord, updateWordNote, currentVerse, nextWord, setTranslateMode}: WordNotesProps): ReactElement => {
 
     const [permShowButton, setPermShowButton] = useState(false)
 
@@ -45,7 +46,7 @@ const WordNotes: FC<WordNotesProps> = ({wordNote, currentWord, updateWordNote, c
         Write the definition + notes for: {currentVerse.words[currentWord].word}: <input value={wordNote}
                                                                                  onChange={handleChange}
     onKeyDown={onKeyDown}/>
-        {showButton() ? <><br/><button>Translate the whole sentence</button></>:         <div className="small-accent">
+        {showButton() ? <><br/><button onClick={() => setTranslateMode(true)}>Translate the whole sentence</button></>:         <div className="small-accent">
         Press "Enter" to navigate to the next word.
         <br/>
         Press "Shift"+"Enter" navigate to the previous word.
