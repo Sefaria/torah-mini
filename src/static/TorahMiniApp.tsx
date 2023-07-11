@@ -6,6 +6,7 @@ import VerbChart from "./VerbChart";
 import {Verse} from "./model/Verse";
 import {VerseNotes, WordNote} from "./model/VerseNotes";
 import WordNotes from "./WordNotes";
+import TranslationDisplay from "./TranslationDisplay";
 
 function TorahMiniApp () {
 
@@ -14,7 +15,8 @@ function TorahMiniApp () {
     const [currentWord, setCurrentWord] = useState(0)
     const [stickyWord, setStickyWord] = useState(null)
     const [showTranslation, setShowTranslation] = useState(false)
-
+    const [translateMode, setTranslateMode] = useState(false);
+    const [showGreatJob, setShowGreatJob] = useState(false);
     // useEffect(() => {
     //     // save
     //     setCurrentVerseNotes(new VerseNotes(currentVerse))
@@ -28,7 +30,28 @@ function TorahMiniApp () {
     //     }
     // }
 
+    const setCurrentWordAndReset = n => {
+        setTranslateMode(false);
+        setCurrentWord(n);
+    }
+
+    const nextWord = (goBackwards: false) => {
+        const wordCount = currentVerse.words.length;
+        const increment = goBackwards ? -1 : 1;
+        let nextWord = (currentWord + increment) % wordCount
+        nextWord = nextWord < 0 ? wordCount + nextWord : nextWord;
+        if(currentVerseNotes[currentWord].notes.length > 0) {
+            setShowGreatJob(true);
+        }
+        setCurrentWordAndReset(nextWord);
+    }
+
+    const showTranslateEntireSentence = () => {
+
+    }
+
     const updateWordNote = (newText, noteIndex) => {
+        setShowGreatJob(false)
         let currentVerseNotesCopy = [...currentVerseNotes]
         let currentWordNote = {...currentVerseNotesCopy[noteIndex]}
         currentVerseNotesCopy[noteIndex].notes = newText;
@@ -36,14 +59,25 @@ function TorahMiniApp () {
     }
 
     return (<div className="TorahMiniApp">
-            Genesis 9:6
-            <VerseReader verse={currentVerse} currentWord={currentWord} setCurrentWord={setCurrentWord}
+
+        {showGreatJob ? <div class="good-job">
+                GREAT JOB!🎉
+            </div> : null }
+            <div className="flex-column">
+                <div className="divider-block"></div>
+
+                Genesis 9:6
+            <VerseReader verse={currentVerse} currentWord={currentWord} setCurrentWord={setCurrentWordAndReset}
                          setStickyWord={setStickyWord}/>
             {<WordNotes wordNote={currentVerseNotes[currentWord].notes} currentWord={currentWord}
-                                      updateWordNote={updateWordNote}  currentVerse={currentVerse}/>}
-            <DictionaryDisplay verse={currentVerse} currentWord={currentWord}/>
-            <VerbChart/>
-            Translate entire sentence:
+                                      updateWordNote={updateWordNote}  currentVerse={currentVerse}
+            nextWord={nextWord}
+            setTranslateMode={setTranslateMode}/>}
+                <div class="divider-block"></div>
+            </div>
+            <div className="dict-translation" className="flex">
+                <div className="flex-column translate-verse-box">
+                    { translateMode ? <>            Translate entire verse:
             <div className="full-translation-container"><textarea dir="ltr"></textarea></div>
             <br/>
                         {!showTranslation ? <button onClick={() => setShowTranslation(true)}>Check Translation</button> :
@@ -54,6 +88,13 @@ Was humankind made.
                     <button onClick={() => setShowTranslation(false)}>Hide Translation</button>
 </div>
             }
+           </> : <><DictionaryDisplay verse={currentVerse} currentWord={currentWord}/>
+                                        <VerbChart/>
+</>}
+                </div>
+                <div className="flex"><TranslationDisplay setCurrentWord={setCurrentWordAndReset} currentWord={currentWord} verse={currentVerse} verseNotes={currentVerseNotes}/></div>
+            </div>
+ <div className="divider-block"></div>
         </div>
     )
 }

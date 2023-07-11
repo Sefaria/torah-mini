@@ -28,7 +28,7 @@ const VerseReader: FC<VerseReaderProps> = ({verse, currentWord, setStickyWord, s
 
     return (<div dir="rtl"><div>{verse.words
         .map((word, index) => <span key={word.verse_index+"outer"}>
-            <span key={word.verse_index} id={word.verse_index+"-verseWord"} className={"verseWord " + (word.verse_index === currentWord ? "highlight" : "")} onMouseOver={onMouseOver}>{word.word}</span><span key={word.verse_index + "space"}> </span></span>)}
+            <span key={word.verse_index} id={word.verse_index+"-verseWord"} className={"verseWord " + (word.verse_index === currentWord ? "highlight" : "")} onMouseOver={onMouseOver}>{word.word}</span><span key={word.verse_index + "space"}>{'\u00A0'}</span></span>)}
     </div>
     </div>)
 }

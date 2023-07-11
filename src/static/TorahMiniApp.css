@@ -6,4 +6,56 @@
 .TorahMiniApp {
     display: flex;
     flex-direction: column;
+    min-height: 100%;
+}
+
+.TorahMiniApp div.flex {
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.TorahMiniApp div.flex-row {
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.TorahMiniApp div.flex-column {
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.verseWord:hover {
+    cursor: pointer;
+}
+
+.divider-block {
+    background-color: #5BCEFA;
+    height: 5px;
+    margin: 10px 0px;
+}
+
+.good-job {
+    position: fixed;
+    left: 35%;
+    top: 10%;
+    animation: hideshow 4s 0s ease;
+    font-size: 50px;
+    color: darkblue;
+    opacity:0;
+}
+
+@keyframes hideshow {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.translate-verse-box {
+    margin: 5px;
 }
