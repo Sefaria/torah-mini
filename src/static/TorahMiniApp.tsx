@@ -29,6 +29,18 @@ function TorahMiniApp () {
     //     }
     // }
 
+    const nextWord = (goBackwards: false) => {
+        const wordCount = currentVerse.words.length;
+        const increment = goBackwards ? -1 : 1;
+        let nextWord = (currentWord + increment) % wordCount
+        nextWord = nextWord < 0 ? wordCount + nextWord : nextWord;
+        setCurrentWord(nextWord);
+    }
+
+    const showTranslateEntireSentence = () => {
+
+    }
+
     const updateWordNote = (newText, noteIndex) => {
         let currentVerseNotesCopy = [...currentVerseNotes]
         let currentWordNote = {...currentVerseNotesCopy[noteIndex]}
@@ -41,7 +53,8 @@ function TorahMiniApp () {
             <VerseReader verse={currentVerse} currentWord={currentWord} setCurrentWord={setCurrentWord}
                          setStickyWord={setStickyWord}/>
             {<WordNotes wordNote={currentVerseNotes[currentWord].notes} currentWord={currentWord}
-                                      updateWordNote={updateWordNote}  currentVerse={currentVerse}/>}
+                                      updateWordNote={updateWordNote}  currentVerse={currentVerse}
+            nextWord={nextWord}/>}
             <div className="dict-translation" className="flex">
                 <div className="flex">
                     <DictionaryDisplay verse={currentVerse} currentWord={currentWord}/>
