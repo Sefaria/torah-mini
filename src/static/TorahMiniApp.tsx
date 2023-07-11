@@ -15,7 +15,8 @@ function TorahMiniApp () {
     const [currentWord, setCurrentWord] = useState(0)
     const [stickyWord, setStickyWord] = useState(null)
     const [showTranslation, setShowTranslation] = useState(false)
-
+    const [translateMode, setTranslateMode] = useState(false);
+    const [showGreatJob, setShowGreatJob] = useState(false);
     // useEffect(() => {
     //     // save
     //     setCurrentVerseNotes(new VerseNotes(currentVerse))
@@ -34,6 +35,9 @@ function TorahMiniApp () {
         const increment = goBackwards ? -1 : 1;
         let nextWord = (currentWord + increment) % wordCount
         nextWord = nextWord < 0 ? wordCount + nextWord : nextWord;
+        if(currentVerseNotes[currentWord].notes.length > 0) {
+            setShowGreatJob(true);
+        }
         setCurrentWord(nextWord);
     }
 
@@ -42,6 +46,7 @@ function TorahMiniApp () {
     }
 
     const updateWordNote = (newText, noteIndex) => {
+        setShowGreatJob(false)
         let currentVerseNotesCopy = [...currentVerseNotes]
         let currentWordNote = {...currentVerseNotesCopy[noteIndex]}
         currentVerseNotesCopy[noteIndex].notes = newText;
@@ -49,6 +54,10 @@ function TorahMiniApp () {
     }
 
     return (<div className="TorahMiniApp">
+
+        {showGreatJob ? <div class="good-job">
+                GREAT JOB!🎉
+            </div> : null }
             <div className="flex-column">
                 <div className="divider-block"></div>
 
@@ -62,12 +71,7 @@ function TorahMiniApp () {
             </div>
             <div className="dict-translation" className="flex">
                 <div className="flex">
-                    <DictionaryDisplay verse={currentVerse} currentWord={currentWord}/>
-                    <VerbChart/>
-                </div>
-                <div className="flex"><TranslationDisplay setCurrentWord={setCurrentWord} currentWord={currentWord} verse={currentVerse} verseNotes={currentVerseNotes}/></div>
-            </div>
-            Translate entire sentence:
+                    { translateMode ? <>            Translate entire sentence:
             <div className="full-translation-container"><textarea dir="ltr"></textarea></div>
             <br/>
                         {!showTranslation ? <button onClick={() => setShowTranslation(true)}>Check Translation</button> :
@@ -78,7 +82,12 @@ Was humankind made.
                     <button onClick={() => setShowTranslation(false)}>Hide Translation</button>
 </div>
             }
-            <div className="divider-block"></div>
+            <div className="divider-block"></div></> : <><DictionaryDisplay verse={currentVerse} currentWord={currentWord}/>
+                                        <VerbChart/>
+</>}
+                </div>
+                <div className="flex"><TranslationDisplay setCurrentWord={setCurrentWord} currentWord={currentWord} verse={currentVerse} verseNotes={currentVerseNotes}/></div>
+            </div>
 
         </div>
     )
