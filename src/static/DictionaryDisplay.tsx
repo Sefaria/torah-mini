@@ -54,6 +54,9 @@ const DictionaryDisplay: FC<DictionaryDisplayProps> = ({verse, currentWord}: Dic
                     </div>
             )})
             }
+            <br/>
+            <a href={`https://www.pealim.com/search/?from-nav=1&q=${verse.words[currentWord].word}`} target="_blank">See grammatical conjugation info</a>
+
         </div>
         <br/>
     </div>

@@ -77,7 +77,7 @@ function TorahMiniApp () {
             </div>
             <div className="dict-translation" className="flex">
                 <div className="flex-column translate-verse-box">
-                    { translateMode ? <>            Translate entire verse:
+                    { translateMode ? <>            Look at your translations and try to translate the entire verse:
             <div className="full-translation-container"><textarea dir="ltr"></textarea></div>
             <br/>
                         {!showTranslation ? <button onClick={() => setShowTranslation(true)}>Check Translation</button> :

@@ -43,14 +43,16 @@ const WordNotes: FC<WordNotesProps> = ({wordNote, currentWord, updateWordNote, c
     }
 
     return <div class="word-notes">
+        <div className="small-accent">
+        Hover over words or press "Enter" to navigate to the next word.
+        <br/>
+        Press "Shift"+"Enter" navigate to the previous word.
+        </div>
         Write the definition + notes for: {currentVerse.words[currentWord].word}: <input value={wordNote}
                                                                                  onChange={handleChange}
     onKeyDown={onKeyDown}/>
-        {showButton() ? <><br/><button onClick={() => setTranslateMode(true)}>Translate the whole sentence</button></>:         <div className="small-accent">
-        Press "Enter" to navigate to the next word.
-        <br/>
-        Press "Shift"+"Enter" navigate to the previous word.
-        </div>}
+        {showButton() ? <><br/><button onClick={() => setTranslateMode(true)}>Translate the whole sentence</button></>:
+        null}
     </div>;
 }
 
