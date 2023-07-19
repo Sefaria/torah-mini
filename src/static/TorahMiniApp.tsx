@@ -66,7 +66,7 @@ function TorahMiniApp () {
 
     return (<div className="TorahMiniApp">
 
-        {showGreatJob ? <div class="good-job">
+        {showGreatJob ? <div className="good-job">
                 GREAT JOB!🎉
             </div> : null }
             <div className="flex-column">
@@ -79,7 +79,7 @@ function TorahMiniApp () {
                                       updateWordNote={updateWordNote}  currentVerse={currentVerse}
             nextWord={nextWord}
             setTranslateMode={setTranslateMode}/>}
-                <div class="divider-block"></div>
+                <div className="divider-block"></div>
             </div>
             <div className="dict-translation" className="flex">
                 <div className="flex-column translate-verse-box">

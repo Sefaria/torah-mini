@@ -42,7 +42,7 @@ const WordNotes: FC<WordNotesProps> = ({wordNote, currentWord, updateWordNote, c
         }
     }
 
-    return <div class="word-notes">
+    return <div className="word-notes">
         <div className="small-accent">
         Hover over words or press "Enter" to navigate to the next word.
         <br/>
