@@ -17,6 +17,7 @@ function TorahMiniApp () {
     const [showTranslation, setShowTranslation] = useState(false)
     const [translateMode, setTranslateMode] = useState(false);
     const [showGreatJob, setShowGreatJob] = useState(false);
+    const [userTranslation, setUserTranslation] = useState("");
     // useEffect(() => {
     //     // save
     //     setCurrentVerseNotes(new VerseNotes(currentVerse))
@@ -33,6 +34,11 @@ function TorahMiniApp () {
     const setCurrentWordAndReset = n => {
         setTranslateMode(false);
         setCurrentWord(n);
+    }
+
+    const onUserTranslationChange = e => {
+
+        setUserTranslation(e.target.value);
     }
 
     const nextWord = (goBackwards: false) => {
@@ -60,7 +66,7 @@ function TorahMiniApp () {
 
     return (<div className="TorahMiniApp">
 
-        {showGreatJob ? <div class="good-job">
+        {showGreatJob ? <div className="good-job">
                 GREAT JOB!🎉
             </div> : null }
             <div className="flex-column">
@@ -73,12 +79,16 @@ function TorahMiniApp () {
                                       updateWordNote={updateWordNote}  currentVerse={currentVerse}
             nextWord={nextWord}
             setTranslateMode={setTranslateMode}/>}
-                <div class="divider-block"></div>
+                <div className="divider-block"></div>
             </div>
             <div className="dict-translation" className="flex">
                 <div className="flex-column translate-verse-box">
                     { translateMode ? <>            Look at your translations and try to translate the entire verse:
-            <div className="full-translation-container"><textarea dir="ltr"></textarea></div>
+            <div className="full-translation-container">
+                <textarea dir="ltr"
+                          value={userTranslation}
+                onChange={onUserTranslationChange}/>
+            </div>
             <br/>
                         {!showTranslation ? <button onClick={() => setShowTranslation(true)}>Check Translation</button> :
                 <div>Whoever sheds human blood,
